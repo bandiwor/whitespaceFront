@@ -1,0 +1,109 @@
+.page {
+  @apply pt-4 w-full;
+
+  @screen mobile-l {
+    @apply pt-0 px-1;
+  }
+}
+
+.chat {
+  @apply w-full rounded-lg border border-gray-soft h-[80dvh] flex flex-col;
+}
+
+.chat_header {
+  @apply bg-background flex justify-between rounded-t-lg p-1 items-center;
+
+  .back_button {
+    @apply flex gap-1 items-center p-2 rounded-full hover:bg-background-elevated-1;
+
+    & > svg {
+      @screen mobile-s {
+        @apply w-4 h-4;
+      }
+    }
+  }
+
+  .companion {
+    @apply flex flex-col gap-1 items-center;
+
+    .name {
+      @apply text-xl;
+
+      @screen mobile-l {
+        @apply text-lg;
+      }
+      @screen mobile {
+        @apply text-base;
+      }
+    }
+    .last_seen_at {
+      @apply text-sm text-text-weak;
+
+      @screen mobile {
+        @apply text-xs;
+      }
+    }
+  }
+
+  .other {
+    @apply flex items-center gap-1;
+
+    .chat_actions {
+      @apply relative;
+
+      .open_chat_actions {
+        @apply p-1 rounded-full hover:bg-background-elevated-1;
+      }
+    }
+    .user_avatar {
+      @apply rounded-full;
+    }
+  }
+}
+
+.chat_messages {
+  @apply flex-1 p-1 overflow-y-auto flex flex-col gap-1;
+}
+
+.chat_controls {
+  @apply bg-background rounded-b-lg items-center justify-between flex gap-2 p-1;
+
+  box-shadow: 0 -2px 5px 1px var(--page-color);
+}
+
+.text_input_field {
+  @apply w-full bg-page px-2 py-2 rounded-xl text-lg border border-gray-soft select-none;
+}
+
+.send_message {
+  @apply relative p-2 rounded-full cursor-pointer;
+
+  &:hover {
+    @apply bg-background-elevated-1;
+  }
+
+  &:active {
+    @apply bg-background shadow-inner;
+  }
+}
+
+.attach_file {
+  @apply relative p-2 rounded-full cursor-pointer;
+
+  &:hover {
+    @apply bg-background-elevated-1;
+  }
+
+  &:active {
+    @apply bg-background shadow-inner;
+  }
+}
+
+
+.voice_recording {
+  @apply w-full h-full flex items-center justify-center;
+
+  .recording_info {
+
+  }
+}

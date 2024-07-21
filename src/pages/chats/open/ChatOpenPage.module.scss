@@ -1,0 +1,23 @@
+.page {
+  @apply w-full flex items-center justify-center flex-col pt-[10dvh];
+}
+
+.chat_loading {
+  @apply w-full flex p-10 bg-background rounded-xl border border-gray-soft;
+
+  &.loading {
+    @apply animate-pulse;
+  }
+}
+
+.error_message {
+  @apply w-full text-center text-xl;
+}
+
+.spinner_wrapper {
+  @apply animate-spin m-auto;
+
+  & > svg {
+    @apply w-[50px] h-[50px] aspect-square object-contain bg-contain;
+  }
+}

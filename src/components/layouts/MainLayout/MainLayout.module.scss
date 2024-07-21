@@ -1,0 +1,11 @@
+.layout {
+
+}
+
+.header_wrapper {
+  @apply w-full h-header fixed bg-background border-b border-background-elevated-1 shadow-xl;
+}
+
+.content {
+  @apply pt-header-height;
+}

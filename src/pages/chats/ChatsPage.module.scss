@@ -1,0 +1,77 @@
+.page {
+  @apply max-w-[700px] m-auto;
+}
+
+.search_form {
+  @apply w-full py-1;
+}
+
+.input_wrapper {
+  @apply w-full flex items-center text-text rounded-3xl shadow shadow-black;
+
+  .search_field {
+    @apply hover:bg-background-elevated-1 transition-colors w-full p-3 rounded-l-3xl text-xl bg-background border border-gray-soft h-[54px];
+  }
+  .search_button {
+    @apply hover:bg-background-elevated-1 transition-colors rounded-r-3xl bg-background p-2 border border-gray-soft h-[54px];
+
+    &:active {
+      @apply bg-background;
+    }
+
+    &.loading {
+      & > svg {
+        @apply animate-spin;
+      }
+    }
+  }
+}
+
+.chats_list {
+  @apply flex flex-col w-full gap-1 mt-4;
+}
+
+.chat {
+  @apply flex justify-between items-center py-1 px-1 rounded-3xl border border-gray-soft bg-background transition-colors ease-in cursor-pointer;
+
+  &:hover {
+    @apply bg-background-elevated-1;
+  }
+
+  .user {
+    @apply flex gap-2 items-center;
+
+    .avatar {
+      @apply rounded-full object-cover bg-cover aspect-square;
+
+    }
+    .title_and_message {
+      .chat_name {
+        @apply text-xl font-bold;
+
+      }
+      .last_message {
+        @apply text-sm text-text-weak;
+      }
+    }
+  }
+
+  .message_sent_at {
+    @apply text-xs px-2;
+  }
+}
+
+.no_chats_banner {
+  @apply w-full p-2 border-dotted border-gray-soft border rounded-xl mt-4 bg-background;
+
+  .title {
+    @apply text-center text-2xl py-2;
+  }
+  .description {
+    @apply py-2 px-3 text-center;
+
+    .phrase_highlight {
+      @apply bg-contrast text-harmonic p-1 rounded-xl font-bold;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.layout {
+
+}
+
+.sidebar {
+  @apply fixed flex flex-col w-sidebar;
+
+  @screen mobile-l {
+    @apply hidden;
+  }
+}
+
+.navigation {
+  @apply w-full m-0.5 p-1 max-w-[200px];
+}
+
+.list {
+  @apply flex flex-col gap-2;
+}
+
+.link {
+  @apply flex py-2 px-1 rounded-xl border-gray-soft border justify-start transition-colors ease-in;
+
+  @screen tablet {
+    @apply inline-block p-2;
+  }
+
+  @screen tablet-above {
+    @apply w-full gap-1;
+  }
+
+  &.active {
+    @apply bg-background-elevated-1;
+  }
+
+  &:hover {
+    @apply bg-background;
+  }
+  &:active {
+    @apply bg-page shadow-inner shadow-background;
+  }
+
+  & > svg {
+    @apply w-[21.5px] h-[21.5px] bg-cover object-cover;
+  }
+
+  &__label {
+    @apply m-auto;
+
+    @screen tablet {
+      @apply hidden;
+    }
+  }
+
+  @screen mobile-l {
+    @apply text-sm p-1;
+  }
+}
+
+.content {
+  @apply w-content m-auto;
+}

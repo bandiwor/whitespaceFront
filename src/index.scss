@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@import "includeStyles/font";
+@import "includeStyles/variables";
+@import "includeStyles/utils";
+
+::-webkit-scrollbar {
+  @apply bg-background-elevated-1;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray;
+}
+
+body {
+  @apply font-sans min-h-full bg-page text-text;
+}

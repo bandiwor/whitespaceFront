@@ -1,0 +1,46 @@
+.message_wrapper {
+  @apply w-full flex;
+
+  &[data-me="true"] {
+    @apply justify-end;
+  }
+}
+
+
+.message {
+  @apply inline-flex p-2 rounded-xl flex-wrap gap-1 bg-background max-w-[75%];
+
+  &.me {
+    @apply mr-0 ml-auto shadow bg-background-elevated-1;
+  }
+
+  &__text {
+    @apply text-xl break-all;
+  }
+  &__created_at {
+    @apply self-end text-xs text-text-weak;
+  }
+}
+
+.voice_message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice_button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.voice_time {
+  font-size: 14px;
+  color: var(--text-weak-color);
+}
+
+.loader {
+  font-size: 14px;
+  color: var(--gray-color);
+}

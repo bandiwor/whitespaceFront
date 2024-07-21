@@ -1,0 +1,7 @@
+.wrapper {
+  @apply bg-white p-1 rounded-lg inline-block z-10 flex-shrink-0;
+}
+
+.image {
+  @apply flex-shrink-0 select-none h-full;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@minht11/solid-virtual-container": "^0.2.1",
+    "@solidjs/router": "^0.13.6",
+    "@types/js-cookie": "^3.0.6",
+    "js-cookie": "^3.0.5",
+    "ky": "^1.4.0",
+    "lightningcss": "^1.25.1",
+    "sass": "^1.77.6",
+    "socket.io-client": "^4.7.5",
+    "solid-js": "^1.8.17",
+    "terser": "^5.31.1",
+    "vite-plugin-solid-svg": "^0.8.1",
+    "vite-plugin-svgr": "^4.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}

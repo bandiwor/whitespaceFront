@@ -1,0 +1,7 @@
+.button {
+  @apply p-3 flex items-center justify-center rounded-full;
+
+  &:hover  {
+    @apply bg-background-elevated-2;
+  }
+}

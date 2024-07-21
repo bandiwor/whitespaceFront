@@ -1,0 +1,18 @@
+.button {
+  @apply bg-page border border-gray rounded-xl w-full p-3 text-xl transition-colors ease-in;
+
+  &:disabled {
+    @apply bg-background-elevated-1 text-text-weak;
+  }
+
+  &:hover {
+    @apply bg-background;
+  }
+  &:active {
+    @apply bg-page;
+  }
+
+  &:focus:where(:not(&:hover)):where(:not(&:active)) {
+    @apply border-contrast;
+  }
+}

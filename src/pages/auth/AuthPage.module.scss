@@ -1,0 +1,67 @@
+.wrapper {
+  @apply pt-2 sm:pt-[50px] mb-[25px];
+}
+
+.form {
+  @apply w-full border border-gray bg-page rounded-lg p-4 flex flex-col items-center gap-4 max-w-[600px] m-auto transition-colors ease-in;
+
+  &__caption {
+    @apply w-full text-center text-3xl my-2;
+
+  }
+  &__fields {
+    @apply flex flex-col w-full gap-3 py-2;
+  }
+
+  &__separator {
+    @apply w-[90%] sm:w-[75%] bg-gray h-[0.5px] rounded-full my-4;
+  }
+  &__error_text {
+    @apply text-red text-xl max-w-[90%] animate-appearance-down relative;
+  }
+  &__alternate_auth {
+    @apply self-end hover:text-text-alt transition-colors;
+
+    [data-alt] {
+      @apply font-bold;
+    }
+  }
+
+  &__loading_status {
+    @apply w-full;
+
+    &_spinner {
+      @apply m-auto w-6 h-6 rounded-full border-2 border-r-0 border-gray-contrast animate-spin;
+    }
+  }
+}
+
+.gender {
+  @apply w-full border border-gray rounded-xl p-3;
+
+  &__caption {
+    @apply text-text-alt select-none;
+  }
+  &__select {
+    @apply flex w-full justify-between items-center gap-2 mt-5;
+
+    &_button {
+      @apply border select-none border-gray rounded-2xl w-full p-2 shadow-2xl transition-colors ease-in text-xl;
+
+      &:hover {
+        @apply bg-background;
+      }
+
+      &.male_active {
+        @apply border-sky-blue text-sky-blue;
+      }
+      &.female_active {
+        @apply border-pink text-pink;
+      }
+    }
+  }
+}
+
+.open_telegram_bot {
+  @apply w-full border border-gray rounded-xl text-center p-3 transition-colors ease-in bg-sky-blue hover:bg-blue;
+}

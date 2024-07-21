@@ -1,0 +1,111 @@
+.account {
+  @apply h-full flex items-center shrink-0;
+
+  .img {
+    @apply rounded-full aspect-square object-cover bg-cover;
+  }
+
+  .login_button {
+    @apply bg-background-elevated-1 p-2 rounded-xl border border-gray-soft transition-colors ease-in shadow shadow-page;
+
+    &:hover {
+      @apply bg-background-elevated-2;
+    }
+
+    &:active {
+      @apply bg-background shadow-inner;
+    }
+  }
+}
+
+.details {
+  @apply absolute bg-background p-6 overflow-hidden rounded-lg rounded-t-none border border-gray-soft select-none animate-appearance top-header-height right-header-account-menu w-[280px];
+
+  @screen tablet {
+    @apply p-4 w-[250px];
+  }
+  @screen mobile {
+    @apply p-2 w-[200px] mr-0.5;
+  }
+
+  &__wrapper {
+    @apply flex flex-col items-center gap-2;
+  }
+
+  .title {
+    @apply text-center text-2xl font-bold;
+  }
+
+  .link {
+    @apply text-lg hover:text-text-alt transition-colors;
+  }
+
+  .logout_button {
+    @apply w-3/4 rounded-xl text-center border border-gray-soft py-1.5 text-lg shadow shadow-page;
+
+    @screen tablet {
+      @apply mb-2;
+    }
+    @screen mobile {
+      @apply mb-4;
+    }
+
+    &:hover {
+      @apply bg-background-elevated-1;
+    }
+    &:active {
+      @apply bg-background shadow-inner;
+    }
+  }
+
+  .img {
+    @apply rounded-full mb-2;
+  }
+}
+
+.summary {
+  @apply bg-background flex items-center gap-2.5 border border-gray-soft rounded-3xl px-1 py-1 transition-all ease-in shadow shadow-page;
+
+  &:hover {
+    @apply bg-background-elevated-1;
+  }
+
+  &:hover &__label {
+    @apply text-text;
+  }
+
+  &:active {
+    @apply bg-background shadow-inner;
+  }
+
+  &.opened {
+    @apply rounded-none bg-background-elevated-1;
+  }
+
+  &__label {
+    @apply font-medium text-2xl mobile:text-xl ml-2 translate-y-0.5 text-text-alt transition-colors ease-in;
+  }
+
+  &__image {
+    @apply rounded-full aspect-square;
+  }
+}
+
+.summary_loading {
+  @apply w-[150px] h-10 border border-gray-soft rounded-3xl bg-background flex justify-between items-center animate-pulse;
+
+  &__label {
+    @apply h-full pl-2 py-1;
+
+    .placeholder {
+      @apply w-[94px] h-full bg-background-elevated-1 rounded-3xl animate-pulse;
+    }
+  }
+  &__image {
+    @apply w-[33px] h-[33px] m-1 aspect-square rounded-full bg-background-elevated-1 animate-pulse;
+  }
+}
+
+.list {
+  @apply flex flex-col items-center gap-1 py-2;
+}

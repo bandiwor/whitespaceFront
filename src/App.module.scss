@@ -1,0 +1,26 @@
+.loader {
+  @apply w-full h-[100dvh];
+}
+
+.content {
+  @apply bg-background p-2 rounded-xl w-full h-full flex items-center justify-center flex-col gap-2 select-none;
+}
+
+.label {
+  @apply text-3xl font-bold select-none;
+}
+
+.logo {
+  @apply w-[100px] select-none;
+}
+
+.bounce {
+  @apply animate-bounce;
+}
+.pulse {
+  @apply animate-pulse;
+}
+
+.logo_image {
+  @apply w-full select-none pointer-events-none;
+}

@@ -1,0 +1,88 @@
+:root, :root[data-theme="light"], :root.light {
+  --page-color: rgb(240, 240, 240);
+  --background-color: rgb(235, 235, 235);
+  --background-elevated-1-color: rgb(225, 225, 225);
+  --background-elevated-2-color: rgb(215, 215, 215);
+  --background-elevated-3-color: rgb(205, 205, 205);
+  --background-elevated-4-color: rgb(190, 190, 190);
+
+  --gray-soft-color: rgb(150, 150, 150);
+  --gray-color: rgb(130, 130, 130);
+  --gray-contrast-color: rgb(110, 110, 110);
+
+  --text-color: rgb(30, 30, 30);
+  --text-alt-color: rgb(50, 50, 50);
+  --text-weak-color: rgb(70, 70, 70);
+
+  --red-color: rgb(195, 18, 18);
+  --orange-color: rgb(197, 92, 17);
+  --yellow-color: rgb(197, 161, 10);
+  --green-color: rgb(52, 181, 14);
+  --sky-blue-color: rgb(4, 105, 182);
+  --blue-color: rgb(29, 29, 218);
+  --purple-color: rgb(107, 13, 195);
+  --pink-color: rgb(181, 12, 107);
+
+  --contrast-color: rgb(50, 50, 50);
+  --harmonic-color: rgb(240, 240, 240);
+}
+
+:root[data-theme="dark"], :root.dark {
+  --page-color: rgb(20, 20, 20);
+  --background-color: rgb(28, 28, 28);
+  --background-elevated-1-color: rgb(35, 35, 35);
+  --background-elevated-2-color: rgb(45, 45, 45);
+  --background-elevated-3-color: rgb(55, 55, 55);
+  --background-elevated-4-color: rgb(65, 65, 65);
+
+  --gray-soft-color: rgb(80, 80, 80);
+  --gray-color: rgb(100, 100, 100);
+  --gray-contrast-color: rgb(140, 140, 140);
+
+  --text-color: rgb(220, 220, 220);
+  --text-alt-color: rgb(180, 180, 180);
+  --text-weak-color: rgb(160, 160, 160);
+
+  --red-color: rgb(200, 60, 60);
+  --orange-color: rgb(220, 100, 30);
+  --yellow-color: rgb(230, 190, 50);
+  --green-color: rgb(70, 200, 50);
+  --sky-blue-color: rgb(30, 140, 220);
+  --blue-color: rgb(50, 50, 255);
+  --purple-color: rgb(120, 40, 220);
+  --pink-color: rgb(200, 50, 150);
+
+  --contrast-color: rgb(200, 200, 200);
+  --harmonic-color: rgb(15, 15, 15);
+}
+
+:root {
+  --white-color: rgb(221, 221, 221);
+  --black-color: rgb(10, 10, 10);
+
+  // Sizes
+  --header-height: 60px;
+
+  // Wrappers width
+  --content-width: 100%;
+
+  @screen mobile-l-above {
+    --content-width: 450px;
+  }
+  @screen tablet-above {
+    --content-width: 450px;
+  }
+  @screen lg {
+    --content-width: 600px;
+  }
+  @screen xl {
+    --content-width: 800px;
+  }
+  @screen 2xl {
+    --content-width: 950px;
+  }
+
+  --sidebar-width: calc((100vw - var(--content-width)) / 2);
+  --header-account-menu-spacing: calc((100vw - var(--content-width)) / 2);
+}
+

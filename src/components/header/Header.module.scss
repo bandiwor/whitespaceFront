@@ -1,0 +1,12 @@
+.header {
+  @apply w-content h-header m-auto flex items-center justify-between mobile-l:p-2;
+
+  .theme_switcher {
+    @screen mobile-l-above {
+      @apply absolute top-0 right-0;
+    }
+    @screen mobile-l {
+      @apply hidden;
+    }
+  }
+}

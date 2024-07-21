@@ -1,0 +1,32 @@
+.layout {
+  @apply w-full min-h-screen;
+
+}
+
+.header_wrapper {
+  @apply fixed inset-0 h-header w-full bg-page;
+}
+
+.header {
+  @apply w-content h-header flex items-center justify-between mx-auto;
+
+  .controls {
+    @apply flex gap-1 items-center;
+  }
+
+  .help_link {
+    @apply text-text-alt;
+  }
+
+  .theme_button {
+    @apply absolute top-0 right-0;
+
+    @screen tablet {
+      @apply static;
+    }
+  }
+}
+
+.content {
+  @apply pt-header-height w-content mx-auto;
+}

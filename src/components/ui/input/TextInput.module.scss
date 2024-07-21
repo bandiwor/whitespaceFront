@@ -1,0 +1,7 @@
+.input {
+  @apply bg-background rounded-xl text-xl border border-gray p-3 transition-colors ease-in outline-none w-full;
+
+  &:focus {
+    @apply border-contrast;
+  }
+}

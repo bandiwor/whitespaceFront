@@ -1,0 +1,27 @@
+.logo {
+  @apply flex items-end gap-2 text-text;
+
+  .label {
+    @apply font-bold relative tablet:hidden;
+
+    &.short {
+      @apply text-2xl hidden tablet:block;
+    }
+
+    &.full {
+      @apply text-3xl mobile-l:hidden;
+    }
+
+    &:hover::after {
+      @apply w-full;
+    }
+
+    &.hover_effect::after {
+      @apply content-[''] absolute top-full left-1/2 w-0 h-0.5 bg-text rounded-md -translate-x-1/2 transition-all ease-out;
+    }
+
+    &.hover_effect:hover::after {
+      @apply w-full;
+    }
+  }
+}
